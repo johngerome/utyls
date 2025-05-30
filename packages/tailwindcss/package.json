@@ -1,6 +1,9 @@
 {
   "name": "tailwindcss",
+  "description": "Tailwind CSS utilities",
   "type": "module",
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
