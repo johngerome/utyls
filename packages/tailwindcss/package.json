@@ -1,0 +1,21 @@
+{
+  "name": "@repo/tailwindcss",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "check-types": "tsc --noEmit"
+  },
+  "exports": {
+    "./cn": {
+      "types": "./src/cn.ts",
+      "default": "./dist/cn.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0",
+    "typescript": "5.8.2"
+  }
+}
