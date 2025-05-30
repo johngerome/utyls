@@ -27,5 +27,4 @@ jobs:
 
       - name: Publish packages
         run: |
-          shopt -s extglob
-          pnpm dlx pkg-pr-new publish --pnpm ./packages/!(eslint-config|typescript-config)
+          pnpm dlx pkg-pr-new publish --pnpm ./packages/tailwindcss
