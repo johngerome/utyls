@@ -8,6 +8,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,vue,md}\"",
     "format:fix": "prettier --write \"**/*.{ts,tsx,vue,md}\"",
     "check-types": "turbo run check-types",
+    "release": "pnpm dlx bumpp -r --execute=\"pnpm run release:prepare\" --all",
+    "release:prepare": "pnpm run lint && pnpm run check-types && pnpm run build",
     "prepare": "husky install"
   },
   "devDependencies": {
