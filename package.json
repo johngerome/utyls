@@ -1,5 +1,5 @@
 {
-  "name": "ytils",
+  "name": "@johngerome/ytils",
   "private": true,
   "scripts": {
     "build": "turbo run build",
