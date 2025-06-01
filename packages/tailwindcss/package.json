@@ -2,7 +2,7 @@
   "name": "tailwindcss",
   "description": "Tailwind CSS utilities",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "dev": "tsc --watch",
