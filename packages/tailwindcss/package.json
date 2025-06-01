@@ -15,7 +15,7 @@
   },
   "exports": {
     "./cn": {
-      "types": "./src/cn.ts",
+      "types": "./dist/cn.d.ts",
       "default": "./dist/cn.js"
     }
   },
