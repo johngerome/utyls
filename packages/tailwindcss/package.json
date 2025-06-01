@@ -1,16 +1,19 @@
 {
-  "name": "@johngerome/ytils-tailwindcss",
+  "name": "@johngerome/ytils",
   "description": "Tailwind CSS utilities",
   "type": "module",
   "version": "0.1.3-beta.5",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
     "check-types": "tsc --noEmit"
   },
   "exports": {
-    "./cn": {
+    "./tailwind/cn": {
       "types": "./src/cn.ts",
       "default": "./dist/cn.js"
     }
