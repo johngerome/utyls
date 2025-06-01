@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@repo/vitest": "workspace:*",
     "date-fns": "^4.1.0",
     "typescript": "5.8.2"
   }
