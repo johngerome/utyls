@@ -5,6 +5,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "test": "turbo run test",
     "format:fix": "prettier --write \"**/*.{ts,tsx,vue,md}\"",
     "check-types": "turbo run check-types",
     "release": "pnpm dlx bumpp -r --execute=\"pnpm run release:prepare\" --all",
