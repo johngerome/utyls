@@ -28,5 +28,8 @@
       "prettier --write",
       "prettier --check"
     ]
+  },
+  "dependencies": {
+    "vitest": "^3.1.4"
   }
 }
