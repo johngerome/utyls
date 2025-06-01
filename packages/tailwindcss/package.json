@@ -27,8 +27,10 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.3.0",
     "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0"
   }
 }
