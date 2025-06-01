@@ -27,4 +27,4 @@ jobs:
 
       - name: Publish packages
         run: |
-          ./scripts/publish-packages.sh
+          ./scripts/publish-pkg-pr.sh

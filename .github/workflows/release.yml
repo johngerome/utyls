@@ -27,3 +27,11 @@ jobs:
       - run: npx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Build packages
+        run: pnpm run build:packages
+
+      - name: Publish to npm
+        run: ./scripts/publish-to-npm.sh
+        env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
