@@ -29,7 +29,7 @@ for package_dir in "$PACKAGES_DIR"/*; do
   if [ "$skip" = false ]; then
     echo "Publishing $package_name to npm..."
     cd "$package_dir"
-    pnpm publish --no-git-checks --provenance
+    pnpm publish --no-git-checks --provenance --access public
     echo "$package_name published to npm successfully!"
     cd - > /dev/null
   else
