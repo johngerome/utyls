@@ -1,6 +1,6 @@
 {
-  "name": "@ztils/tailwind",
-  "description": "Tailwind CSS utilities",
+  "name": "@ztils/date",
+  "description": "Date utilities",
   "type": "module",
   "version": "0.1.3",
   "license": "MIT",
@@ -16,24 +16,26 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "test": "vitest"
   },
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./cn": {
-      "types": "./dist/cn.d.ts",
-      "default": "./dist/cn.js"
+    "./timeAgo": {
+      "types": "./dist/timeAgo.d.ts",
+      "default": "./dist/timeAgo.js"
     }
+  },
+  "peerDependencies": {
+    "date-fns": "^4.0.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@repo/vitest": "workspace:*",
+    "date-fns": "^4.1.0",
     "typescript": "5.8.2"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.3.0"
   }
 }

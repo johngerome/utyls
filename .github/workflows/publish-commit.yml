@@ -6,7 +6,7 @@ on:
     branches:
       - main
     tags:
-      - '!**'
+      - "!**"
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
 
       - name: Publish packages
         run: |
-          ./scripts/publish-pkg-pr.sh
+          pnpm dlx pkg-pr-new publish './packages/*'
