@@ -10,11 +10,6 @@ PACKAGES_DIR="$ROOT_DIR/packages"
 
 echo "Publishing packages to npm..."
 
-if [ -z "${NPM_TOKEN}" ]; then
-  echo "Error: NPM_TOKEN environment variable is required"
-  exit 1
-fi
-
 for package_dir in "$PACKAGES_DIR"/*; do
   package_name=$(basename "$package_dir")
   
