@@ -11,7 +11,13 @@ vi.mock("date-fns", () => ({
     }
     return new Date(dateStr);
   }),
-  parse: vi.fn((dateStr, _) => new Date(dateStr)),
+  parse: vi.fn((dateStr, parseFormat, referenceDate) => {
+    if (parseFormat && dateStr === "not-a-date") {
+      const invalidDate = new Date("invalid");
+      return invalidDate;
+    }
+    return new Date(dateStr);
+  }),
   isValid: vi.fn((date) => {
     if (date instanceof Date && !isNaN(date.getTime())) {
       return true;
