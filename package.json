@@ -1,5 +1,5 @@
 {
-  "name": "utyls",
+  "name": "ztils",
   "private": true,
   "scripts": {
     "build": "turbo run build",
