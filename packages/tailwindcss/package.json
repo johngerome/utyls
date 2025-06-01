@@ -16,6 +16,10 @@
     "check-types": "tsc --noEmit"
   },
   "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
     "./cn": {
       "types": "./dist/cn.d.ts",
       "default": "./dist/cn.js"
