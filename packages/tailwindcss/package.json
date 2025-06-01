@@ -8,6 +8,8 @@
     "type": "git",
     "url": "https://github.com/johngerome/utyls"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
