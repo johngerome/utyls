@@ -37,9 +37,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Build packages
-        run: pnpm run build:packages
-
       - name: Publish to npm
         run: ./scripts/publish-to-npm.sh
         env:
