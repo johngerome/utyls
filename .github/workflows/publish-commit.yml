@@ -27,4 +27,4 @@ jobs:
 
       - name: Publish packages
         run: |
-          ./scripts/publish-pkg-pr.sh
+          pnpm dlx pkg-pr-new publish --pnpm './packages/*'
