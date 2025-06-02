@@ -111,10 +111,6 @@ importers:
         version: 8.32.0(eslint@9.27.0)(typescript@5.8.2)
 
   packages/file:
-    dependencies:
-      date-fns:
-        specifier: ^4.0.0
-        version: 4.1.0
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
