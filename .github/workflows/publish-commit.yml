@@ -1,12 +1,6 @@
 name: Publish Any Commit
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-    tags:
-      - "!**"
+on: [push, pull_request]
 
 jobs:
   build:
