@@ -1,3 +1,3 @@
 # Ztils
 
-[![Release](https://github.com/johngerome/ztils/actions/workflows/release.yml/badge.svg)](https://github.com/johngerome/ztils/actions/workflows/release.yml)
+![GitHub Release](https://img.shields.io/github/v/release/johngerome/ztils)
