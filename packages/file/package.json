@@ -29,9 +29,6 @@
       "import": "./dist/formatBytes.js"
     }
   },
-  "peerDependencies": {
-    "date-fns": "^4.0.0"
-  },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "typescript": "5.8.2"

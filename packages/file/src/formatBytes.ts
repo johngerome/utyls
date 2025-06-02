@@ -11,7 +11,7 @@
  * bytesToSize(0); // "0 Bytes"
  */
 export function bytesToSize(bytes: number, decimals = 2) {
-  if (!+bytes) return "0 Bytes";
+  if (!bytes || bytes < 0) return "0 Bytes";
 
   const k = 1024;
   const dm = decimals < 0 ? 0 : decimals;

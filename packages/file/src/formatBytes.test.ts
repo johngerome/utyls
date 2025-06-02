@@ -32,7 +32,7 @@ describe("bytesToSize", () => {
     // 1 PB (petabyte)
     expect(bytesToSize(1125899906842624)).toBe("1 PB");
     // 1 EB (exabyte)
-    expect(bytesToSize(1152921504606846976)).toBe("1 EB");
+    expect(bytesToSize(1024 ** 6)).toBe("1 EB");
   });
 
   it("should handle fractional bytes", () => {
