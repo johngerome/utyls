@@ -59,15 +59,13 @@ describe("getTotalWeeksInMonth", () => {
   it("should use the current year when year is not provided", () => {
     const currentYear = new Date().getFullYear();
     const monthIndex = 5; // June
-
-    const expectedWeeks = calculateExpectedWeeks(monthIndex, currentYear);
+    const expectedResult = getTotalWeeksInMonth(monthIndex, currentYear);
     const result = getTotalWeeksInMonth(monthIndex);
 
-    expect(result).toBe(expectedWeeks);
+    expect(result).toBe(expectedResult);
   });
 
   it("should handle edge cases correctly", () => {
-    // Test with month 0 (January) and month 11 (December)
     const januaryResult = getTotalWeeksInMonth(0, 2023);
     const decemberResult = getTotalWeeksInMonth(11, 2023);
 
@@ -77,19 +75,3 @@ describe("getTotalWeeksInMonth", () => {
     expect(decemberResult).toBeLessThanOrEqual(6);
   });
 });
-
-// Helper function to calculate expected weeks using the same logic as the implementation
-function calculateExpectedWeeks(monthIndex: number, year: number): number {
-  const monthDate = setMonth(new Date(year, 0), monthIndex);
-  const monthStart = startOfMonth(monthDate);
-  const monthEnd = endOfMonth(monthDate);
-  const firstWeekStart = startOfWeek(monthStart);
-  const lastWeekStart = startOfWeek(monthEnd);
-
-  return (
-    Math.floor(
-      (lastWeekStart.getTime() - firstWeekStart.getTime()) /
-        (7 * 24 * 60 * 60 * 1000),
-    ) + 1
-  );
-}
