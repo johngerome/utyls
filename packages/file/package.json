@@ -1,0 +1,39 @@
+{
+  "name": "@ztils/file",
+  "description": "File utilities",
+  "type": "module",
+  "version": "0.1.7",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johngerome/ztils"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./formatBytes": {
+      "types": "./dist/formatBytes.d.ts",
+      "import": "./dist/formatBytes.js"
+    }
+  },
+  "peerDependencies": {
+    "date-fns": "^4.0.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "5.8.2"
+  }
+}
