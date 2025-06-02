@@ -26,7 +26,35 @@
     },
     "./timeAgo": {
       "types": "./dist/timeAgo.d.ts",
-      "default": "./dist/timeAgo.js"
+      "import": "./dist/timeAgo.js"
+    },
+    "./getCurrentWeek": {
+      "types": "./dist/getCurrentWeek.d.ts",
+      "import": "./dist/getCurrentWeek.js"
+    },
+    "./getMonthToday": {
+      "types": "./dist/getMonthToday.d.ts",
+      "import": "./dist/getMonthToday.js"
+    },
+    "./getTotalWeeksInMonth": {
+      "types": "./dist/getTotalWeeksInMonth.d.ts",
+      "import": "./dist/getTotalWeeksInMonth.js"
+    },
+    "./toFormalDate": {
+      "types": "./dist/toFormalDate.d.ts",
+      "import": "./dist/toFormalDate.js"
+    },
+    "./toFullDate": {
+      "types": "./dist/toFullDate.d.ts",
+      "import": "./dist/toFullDate.js"
+    },
+    "./toISODate": {
+      "types": "./dist/toISODate.d.ts",
+      "import": "./dist/toISODate.js"
+    },
+    "./toShortDate": {
+      "types": "./dist/toShortDate.d.ts",
+      "import": "./dist/toShortDate.js"
     }
   },
   "peerDependencies": {
