@@ -1,5 +1,8 @@
 # @ztils/date
 
+![npm package minimized gzipped size (scoped)](https://img.shields.io/bundlejs/size/%40ztils/date%40latest)
+![NPM Version](https://img.shields.io/npm/v/%40ztils%2Fdate)
+
 > Date utilities
 
 ## Installation
