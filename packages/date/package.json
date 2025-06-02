@@ -26,35 +26,35 @@
     },
     "./timeAgo": {
       "types": "./dist/timeAgo.d.ts",
-      "default": "./dist/timeAgo.js"
+      "import": "./dist/timeAgo.js"
     },
     "./getCurrentWeek": {
       "types": "./dist/getCurrentWeek.d.ts",
-      "default": "./dist/getCurrentWeek.js"
+      "import": "./dist/getCurrentWeek.js"
     },
     "./getMonthToday": {
       "types": "./dist/getMonthToday.d.ts",
-      "default": "./dist/getMonthToday.js"
+      "import": "./dist/getMonthToday.js"
     },
     "./getTotalWeeksInMonth": {
       "types": "./dist/getTotalWeeksInMonth.d.ts",
-      "default": "./dist/getTotalWeeksInMonth.js"
+      "import": "./dist/getTotalWeeksInMonth.js"
     },
     "./toFormalDate": {
       "types": "./dist/toFormalDate.d.ts",
-      "default": "./dist/toFormalDate.js"
+      "import": "./dist/toFormalDate.js"
     },
     "./toFullDate": {
       "types": "./dist/toFullDate.d.ts",
-      "default": "./dist/toFullDate.js"
+      "import": "./dist/toFullDate.js"
     },
     "./toISODate": {
       "types": "./dist/toISODate.d.ts",
-      "default": "./dist/toISODate.js"
+      "import": "./dist/toISODate.js"
     },
     "./toShortDate": {
       "types": "./dist/toShortDate.d.ts",
-      "default": "./dist/toShortDate.js"
+      "import": "./dist/toShortDate.js"
     }
   },
   "peerDependencies": {
