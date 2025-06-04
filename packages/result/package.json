@@ -11,34 +11,40 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc",
+    "build": "tsup",
     "check-types": "tsc --noEmit",
     "test": "vitest"
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./ok": {
+      "types": "./dist/ok.d.ts",
       "import": "./dist/ok.js",
-      "types": "./dist/ok.d.ts"
+      "require": "./dist/ok.cjs"
     },
     "./error": {
+      "types": "./dist/error.d.ts",
       "import": "./dist/error.js",
-      "types": "./dist/error.d.ts"
+      "require": "./dist/error.cjs"
     },
     "./safe": {
+      "types": "./dist/safe.d.ts",
       "import": "./dist/safe.js",
-      "types": "./dist/safe.d.ts"
+      "require": "./dist/safe.cjs"
     }
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "tsup": "^8.0.2"
   }
 }
