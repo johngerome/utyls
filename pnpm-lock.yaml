@@ -119,6 +119,15 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
 
+  packages/result:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      typescript:
+        specifier: 5.8.2
+        version: 5.8.2
+
   packages/tailwindcss:
     dependencies:
       clsx:
