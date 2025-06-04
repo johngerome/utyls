@@ -3,7 +3,7 @@ export type ErrResult = {
   data: null;
 };
 
-export function err(error: Error): ErrResult {
+export function error(error: Error): ErrResult {
   return {
     error,
     data: null,
