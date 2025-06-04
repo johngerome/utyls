@@ -7,4 +7,12 @@ describe("useIsMounted", () => {
     const { result } = renderHook(() => useIsMounted());
     expect(result.current.isMounted).toBe(true);
   });
+
+  it("should return false after component unmounts", async () => {
+    const { result, unmount } = renderHook(() => useIsMounted());
+    expect(result.current.isMounted).toBe(true);
+
+    unmount();
+    expect(result.current.isMounted).toBe(false);
+  });
 });
